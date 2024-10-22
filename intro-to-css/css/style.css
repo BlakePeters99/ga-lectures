@@ -1,0 +1,97 @@
+p {
+    color: purple; /*All p elements will now have purple text!*/
+  }
+  
+  /* 
+  This is 
+  a multi-line
+  comment.
+  */
+  p {
+    /* all four sides */
+    padding: 2px;
+  }
+  p {
+    padding-bottom: 1px;
+    padding-left: 2px;
+    padding-right: 3px;
+    padding-top: 4px;
+  }
+  p {
+    border: 3px solid red;
+  }
+  p {
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+  }
+  p {
+    /* all four sides */
+    margin: 2px;
+  }
+  h2 {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+  }
+  .important {
+    color: red;
+    font-weight: bold;
+  }
+  #about {
+    font-style: italic;
+    color: hotpink;
+  }
+  h1 {
+    color: #7289DA;
+  }
+  
+  a {
+    background-color: #7289DA;
+    color: #FFFFFF;
+  }
+  
+  button {
+    background-color: #7289DA;
+    color: #FFFFFF;
+  }
+  
+  #comments {
+    border: 2px solid #7289DA;
+  }
+  
+  footer {
+    background-color: #7289DA;
+    color: #FFFFFF;
+  }
+  body {
+    --brand-color: #7289DA;
+  }
+  h1 {
+    color: var(--brand-color);
+  }
+  
+  a {
+    background-color: var(--brand-color);
+    color: #FFFFFF;
+  }
+  
+  button {
+    background-color: var(--brand-color);
+    color: #FFFFFF;
+  }
+  
+  #comments {
+    border: 2px solid var(--brand-color);
+  }
+  
+  footer {
+    background-color: var(--brand-color);
+    color: #FFFFFF;
+  }
+  body {
+    --brand-color: #5865F2;
+  }
+  

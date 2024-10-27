@@ -1,18 +1,24 @@
 section {
     background: yellow;
     display: flex;
-    width: 40%;
-    /* Learned that the row makes a long row that 
+    align-items: flex-start;
+    height: 400px; 
+
+    /* width: 40%; */
+
+    /** Learned that the row makes a long row that 
     gets horizontally filled with entities 
     while the column gets vertically filled */
     /* flex-direction: row; */
+    
+    /* justify-content: space-around;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
-    align-content: center;
-    align-items: flex-start;
-    height: 400px;
+    align-content: center; */
 }
 div {
+    /* flex-grow: 1; */
+    flex-basis: 200px;
+    flex-shrink: 4;
     padding: 1em;
     box-sizing: border-box;
     border: 1px solid black;
@@ -24,3 +30,22 @@ div {
 div:first-child {
     height: 10px;
 } */
+
+
+div:first-child {
+    order: 4;  
+    flex-shrink: 1;
+}
+div:last-child {
+    order: 1;   
+    align-self: center;
+    /* flex-grow: 4; */
+}
+div:nth-child(3) {
+    order: 2;  
+}
+/* Cool that you need this last call because any object that 
+doesn't have an order, goes before the ordered objects */
+div:nth-child(2) {
+    order: 3 ;  
+}

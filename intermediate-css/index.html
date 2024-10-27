@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- inline stylesheet-->
+    <style>
+      p#about {
+        color:red;
+      }
+      /* important overides any other rules/precedents */
+      h1 {
+        color: pink !important;
+      }
+     </style>
 </head>
 <body>
     <article>
       <a href="#about">About Section</a>
-      <h1>Intermediate CSS</h1>
+      <h1 style="color: green; font-size: 2em">Intermediate CSS</h1>
       <p id="about">More About CSS</p>
       <div>This is a DIV</div>
       <div class="fun">This is another DIV</div>

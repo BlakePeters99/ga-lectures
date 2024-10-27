@@ -5,10 +5,22 @@ section {
     /* Learned that the row makes a long row that 
     gets horizontally filled with entities 
     while the column gets vertically filled */
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    align-content: center;
+    align-items: flex-start;
+    height: 400px;
 }
 div {
     padding: 1em;
     box-sizing: border-box;
     border: 1px solid black;
 }
+
+/* div:last-child {
+    height: 100px;
+}  
+div:first-child {
+    height: 10px;
+} */

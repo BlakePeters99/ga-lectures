@@ -8,14 +8,19 @@ body {
     background-color: black;
     display: flex;
     height: 600px;
-    /* justify-content: space-evenly; */
+    justify-content: space-around;
     flex-direction: column;
+    align-items: center;
+
   }
   
   .flex-child {
+    display: flex;
     font-size: 48px;
     height: 100px;
     width: 100px;
+    justify-content: center;
+    align-items: center;
   }
   
   #one {

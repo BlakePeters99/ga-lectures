@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+/** CSS BOILER PLATE START **/
+* {
+  box-sizing: border-box
+}
+
+body {
+  background-color: gray;
+  /* Use a system font, if none are available use an available sans-sarif font */
+  font-family: system-ui, sans-serif;
+  /* Ensures full height compatibility across devices */
+  min-height: 100dvh;
+  margin: 0;
+}
+
+/** CSS BOILER PLATE END **/
+
+
 * {
   box-sizing: border-box;
 }
 body {
+  background-color: white;
   font-family: Playwrite+GB+S, Danfo, sans-serif;
 }
 
@@ -58,3 +77,4 @@ div {
   /* min-height specifies that the div will be at minimum 10rem tall */ 
   min-height: 10rem; 
 }
+

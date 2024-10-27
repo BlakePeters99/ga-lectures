@@ -1,5 +1,11 @@
 section {
     background: yellow;
+    display: flex;
+    width: 40%;
+    /* Learned that the row makes a long row that 
+    gets horizontally filled with entities 
+    while the column gets vertically filled */
+    flex-direction: row;
 }
 div {
     padding: 1em;

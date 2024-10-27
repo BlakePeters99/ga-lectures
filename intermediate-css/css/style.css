@@ -78,3 +78,13 @@ div {
   min-height: 10rem; 
 }
 
+/* makes comment 1-3 all red */
+ul {
+  color : red; /* all child elements will have red text */
+}
+
+/* initial overrides inherited attributes */
+li {
+  margin: 5px 0 0 0;
+  color: initial; /* will not inherit red text color from parent */
+}

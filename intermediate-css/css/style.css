@@ -37,3 +37,24 @@ div + div {
 input ~ input {
   border: 1px solid red
 }
+/* Set the width of an element to the entire width of the viewport */
+div {
+  width: 100vw;
+}
+
+/* Set the font size of an element to 2 times the root font size */
+p {
+  font-size: 2rem;
+}
+
+/* Set the margin of an element to 10% of its container element */
+input {
+  margin: 10%;
+}
+
+div {
+  /* div takes up full height of the container element */
+  height: 100%;
+  /* min-height specifies that the div will be at minimum 10rem tall */ 
+  min-height: 10rem; 
+}

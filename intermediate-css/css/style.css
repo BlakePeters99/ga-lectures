@@ -3,9 +3,37 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Danfo, sans-serif;
+  font-family: Playwrite+GB+S, Danfo, sans-serif;
 }
 
 h1 {
   text-align: center;
+}
+
+/* input[type=number]{
+  border: 3px solid red;
+} */
+
+input[type=number]:hover{
+  border: 3px solid green;
+  transition: border 1s;
+}
+
+ul.top-level-list:hover {
+  cursor: pointer;
+}
+#comments-title::first-letter {
+  font-size: 60px;
+}
+
+.top-level-list > li {
+  border: 1px solid orange;
+}
+
+div + div {
+  color: green
+}
+
+input ~ input {
+  border: 1px solid red
 }

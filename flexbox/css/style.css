@@ -7,10 +7,15 @@ body {
   .flex-parent {
     background-color: black;
     display: flex;
+    height: 600px;
+    /* justify-content: space-evenly; */
+    flex-direction: column;
   }
   
   .flex-child {
     font-size: 48px;
+    height: 100px;
+    width: 100px;
   }
   
   #one {

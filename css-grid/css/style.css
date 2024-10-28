@@ -3,6 +3,10 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "nav nav nav"  /* <- place area names in rows and cols as you want them displayed */
+    "aside main main"
+    "footer footer footer"; 
     font-family: sans-serif;
     font-size: 24px;
     min-height: 100vh;
@@ -12,17 +16,32 @@ body {
 
 aside {
     background-color: #38b18a;
+    grid-area: aside;
 }
 
 main {
     background-color: #92d97c;
+    grid-area: main;
 }
 
 footer {
     background-color: #f9f871;
+    grid-area: footer;
+}
+
+nav {
+    grid-area: nav;
 }
 
 nav, 
 footer {
-  grid-column: span 2;
+    grid-column: span 2;
+}
+
+aside,
+main,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -4,14 +4,22 @@ body {
     font-family: system-ui, sans-serif;
   }
   
+  /* Mobile first design increasing min-widths (example right here) */
+  /* Other method (not as popular) deskktop first design decreasing max-widths */
 @media(min-width: 600px){
     body{
         background-color: lightgreen;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media(min-width: 800px){
+    body {
+        background-color: blue;
+    }
+}
+
+/* @media (min-width: 768px) and (max-width: 1199px) {
     body {
         background-color: brown;
     }
-}
+} */

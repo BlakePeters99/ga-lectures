@@ -1,10 +1,11 @@
 body {
     background-color: lightgray;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 
     "nav nav nav"  /* <- place area names in rows and cols as you want them displayed */
+    "p p p "
     "aside main main"
     "footer footer footer"; 
     font-family: sans-serif;
@@ -31,6 +32,15 @@ footer {
 
 nav {
     grid-area: nav;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    grid-area: p;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav, 
@@ -38,10 +48,49 @@ footer {
     grid-column: span 2;
 }
 
+
 aside,
 main,
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+}
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 900px) {
+  p {
+    display: none;
+  }
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 2fr auto ;
+    grid-template-areas: 
+    "nav"
+    "aside"
+    "main"
+    "footer"
+  }
+  /* debugging */
+  nav, a {
+    background-color: red;
+    color: black;
+  }
+  aside {
+    background-color: black;
+  }
+  main {
+    background-color: red;
+  }
+  footer {
+    background-color: black;
+    color: white;
+  }
+
 }

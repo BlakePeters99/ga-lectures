@@ -1,0 +1,17 @@
+body {
+    background-color: lightsalmon;
+    margin: 0px;
+    font-family: system-ui, sans-serif;
+  }
+  
+@media(min-width: 600px){
+    body{
+        background-color: lightgreen;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    body {
+        background-color: brown;
+    }
+}

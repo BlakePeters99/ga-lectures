@@ -14,7 +14,7 @@ body {
 
 @media(min-width: 800px){
     body {
-        background-color: blue;
+        background-color: burlywood;
     }
 }
 
@@ -23,3 +23,24 @@ body {
         background-color: brown;
     }
 } */
+
+
+nav {
+    font-size: 18px;
+    background-color: white;
+    padding:  0 16px;
+}
+
+#destinations {
+    display: none;
+}
+
+@media (min-width: 550px) {
+    #destinations {
+        display: flex;
+        gap: 16px;
+    }
+    #destinations-mobile {
+        display: none;
+    }
+}

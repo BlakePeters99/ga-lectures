@@ -89,13 +89,30 @@ nav a {
     align-items: center;
     justify-content: center;
 }
-  
+  /** THIS CODE HELPS FLEX SPACING SO MUCH!!**/
 .item-card {
     width: 300px;
     margin: 15px;
     display: flex;
     flex-direction: column;
-    align-items: ;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 40px;
+    border-radius: 15px;
+    background-color: #d9dbdd;
+}
+
+.title-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 70%;
+    margin: 15px;
 }
 
 
